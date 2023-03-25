@@ -3,12 +3,17 @@ package org.example;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
+import javafx.scene.text.Font;
 
 public class JavaFXDisplay implements Observer {
     private GameState gameState;
     private Pane root;
     private Circle ballCircle;
+    private Label scoreLabel;
     private Rectangle paddle1Rect;
+
     private Rectangle paddle2Rect;
 
     public JavaFXDisplay(GameState gameState) {
@@ -24,8 +29,16 @@ public class JavaFXDisplay implements Observer {
         paddle1Rect = new Rectangle(10, 30);
         paddle2Rect = new Rectangle(10, 30);
 
+
+        scoreLabel = new Label();
+        scoreLabel.setFont(new Font("Arial", 24));
+
+        HBox scoreBox = new HBox(scoreLabel);
+        scoreBox.setTranslateX(375);
+        scoreBox.setTranslateY(20);
+
         // Ajouter les éléments visuels à la scène
-        root.getChildren().addAll(ballCircle, paddle1Rect, paddle2Rect);
+        root.getChildren().addAll(ballCircle, paddle1Rect, paddle2Rect, scoreBox);
     }
 
     public Pane getRoot() {
@@ -46,6 +59,8 @@ public class JavaFXDisplay implements Observer {
         Paddle player2 = gameState.getPlayer2();
         paddle2Rect.setX(760);
         paddle2Rect.setY(player2.getY() * 20);
+
+        scoreLabel.setText(gameState.getPlayer1Score() + " - " + gameState.getPlayer2Score());
     }
 }
 

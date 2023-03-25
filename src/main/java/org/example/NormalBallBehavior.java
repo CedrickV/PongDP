@@ -1,8 +1,8 @@
 package org.example;
 
 public class NormalBallBehavior implements BallBehavior {
-    private int dx = 1; // Vitesse en 'X'
-    private int dy = 1; // Vitesse en 'Y'
+    private int dx = -1; // Vitesse en 'X'
+    private int dy = -1; // Vitesse en 'Y'
 
     @Override
     public void updatePosition(Ball ball) {
