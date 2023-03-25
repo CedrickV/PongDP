@@ -2,16 +2,32 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import javafx.animation.AnimationTimer;
 
 public class Game {
     private GameState gameState;
+    private AnimationTimer gameLoop;
     private List<Observer> observers = new ArrayList<>();
 
     public Game(GameState gameState) {
         this.gameState = gameState;
+        // Initialiser l'AnimationTimer
+        gameLoop = new AnimationTimer() {
+            private long lastUpdate = 0;
+
+            @Override
+            public void handle(long now) {
+                // Mise à jour du jeu à intervalles réguliers
+                if (now - lastUpdate >= 16_000_000) { // environ 60 images par seconde
+                    update();
+                    lastUpdate = now;
+                }
+            }
+        };
     }
-
-
+    public void start() {
+        gameLoop.start();
+    }
     public void addObserver(Observer observer) {
         observers.add(observer);
     }
@@ -68,6 +84,7 @@ public class Game {
         }
     }
 
+
     public void update() {
         // Mettre à jour l'état du jeu
         gameState.getBall().updatePosition();
@@ -75,5 +92,10 @@ public class Game {
 
         // Notifier les observateurs
         notifyObservers();
+    }
+
+    //getter GameState
+    public GameState getGameState() {
+        return gameState;
     }
 }
