@@ -16,7 +16,6 @@ public class Ball {
     }
 
     // Getters and setters for x, y and behavior
-
     public int getX() {
         return x;
     }
