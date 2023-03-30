@@ -28,8 +28,8 @@ public class JavaFXDisplay implements Observer {
 
         // Créer les éléments visuels pour la balle et les raquettes
         ballCircle = new Circle(5);
-        paddle1Rect = new Rectangle(10, 30);
-        paddle2Rect = new Rectangle(10, 30);
+        paddle1Rect = new Rectangle(10, 60);
+        paddle2Rect = new Rectangle(10, 60);
 
 
         scoreLabel = new Label();

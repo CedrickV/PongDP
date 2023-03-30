@@ -59,8 +59,8 @@ public class Game {
         }
 
         // Collision avec les raquettes
-        if (ball.getX() == 2 && ball.getY() >= player1.getY() && ball.getY() < player1.getY() + 3 ||
-                ball.getX() == 37 && ball.getY() >= player2.getY() && ball.getY() < player2.getY() + 3) {
+        if (ball.getX() == 2 && ball.getY() >= player1.getY() && ball.getY() < player1.getY() + 6 ||
+                ball.getX() == 37 && ball.getY() >= player2.getY() && ball.getY() < player2.getY() + 6) {
             behavior.reverseX();
         }
 
