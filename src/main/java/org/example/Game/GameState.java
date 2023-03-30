@@ -1,4 +1,7 @@
-package org.example;
+package org.example.Game;
+
+import org.example.Ball.Ball;
+import org.example.Paddle.Paddle;
 
 public class GameState {
     private Ball ball;

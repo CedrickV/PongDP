@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c557c224-c695-4134-a3ed-a40df6e3ba2c" name="Changes" comment="LEGALIZE NUCLEAR BOMBS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JavaFXDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JavaFXDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NormalBallBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/NormalBallBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ball/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BallBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ball/BallBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Paddle/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JavaFXDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game/JavaFXDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NormalBallBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ball/NormalBallBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Game/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Paddle/Paddle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,31 +47,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/IntellijProjects/PongDP",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntellijProjects/PongDP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="PongDP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Ball.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679754360486</updated>
       <workItem from="1679754888141" duration="3881000" />
-      <workItem from="1679759266102" duration="2414000" />
+      <workItem from="1679759266102" duration="4119000" />
+      <workItem from="1680195458704" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="LEGALIZE NUCLEAR BOMBS">
       <created>1679756734687</created>
@@ -110,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679759466243</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LEGALIZE NUCLEAR BOMBS">
+      <created>1679761982525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679761982525</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

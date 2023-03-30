@@ -1,4 +1,7 @@
-package org.example;
+package org.example.Ball;
+
+import org.example.Ball.Ball;
+import org.example.Ball.BallBehavior;
 
 public class NormalBallBehavior implements BallBehavior {
     private int dx = -1; // Vitesse en 'X'

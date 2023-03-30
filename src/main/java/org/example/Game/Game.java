@@ -1,8 +1,12 @@
-package org.example;
+package org.example.Game;
 
 import java.util.ArrayList;
 import java.util.List;
 import javafx.animation.AnimationTimer;
+import org.example.Ball.Ball;
+import org.example.Ball.NormalBallBehavior;
+import org.example.Paddle.Direction;
+import org.example.Paddle.Paddle;
 
 public class Game {
     private GameState gameState;

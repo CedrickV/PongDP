@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Game;
 
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
@@ -6,6 +6,8 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
+import org.example.Ball.Ball;
+import org.example.Paddle.Paddle;
 
 public class JavaFXDisplay implements Observer {
     private GameState gameState;

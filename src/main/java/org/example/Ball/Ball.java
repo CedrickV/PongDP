@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Ball;
 
 public class Ball {
     private int x;

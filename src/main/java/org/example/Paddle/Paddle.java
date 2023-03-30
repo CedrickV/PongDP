@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Paddle;
 
 public class Paddle {
     private int y;

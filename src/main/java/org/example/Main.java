@@ -4,6 +4,13 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import org.example.Ball.Ball;
+import org.example.Ball.NormalBallBehavior;
+import org.example.Game.Game;
+import org.example.Game.GameState;
+import org.example.Game.JavaFXDisplay;
+import org.example.Paddle.Direction;
+import org.example.Paddle.Paddle;
 
 public class Main extends Application {
     public static void main(String[] args) {
