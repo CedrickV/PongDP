@@ -18,7 +18,7 @@ Le patron Singleton a été utilisé pour la classe `JavaFXDisplay`. Comme il n'
 
 ### Strategy
 
-Le patron Strategy a été implémenté pour déterminer le comportement de la balle dans le jeu Pong. Plus précisément, la classe Ball utilise une interface BallBehavior qui définit une méthode updatePosition() qui permet de mettre à jour la position de la balle. En utilisant ce patron, on peut facilement changer le comportement de la balle en changeant simplement la classe qui implémente BallBehavior. Cela permet également d'ajouter facilement de nouveaux comportements de balle à l'avenir sans avoir à modifier le code existant de la classe Ball.
+Le patron Strategy a été implémenté pour déterminer le comportement de la balle dans le jeu Pong. Plus précisément, la classe `Ball` utilise une interface `BallBehavior` qui définit une méthode `updatePosition()` qui permet de mettre à jour la position de la balle. En utilisant ce patron, on peut facilement changer le comportement de la balle en changeant simplement la classe qui implémente `BallBehavior`. Cela permet également d'ajouter facilement de nouveaux comportements de balle à l'avenir sans avoir à modifier le code existant de la classe `Ball`.
 
 ### Observer
 
