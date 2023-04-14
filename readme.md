@@ -22,4 +22,4 @@ Le patron Strategy a été implémenté pour déterminer le comportement de la b
 
 ### Observer
 
-Le patron Observer est utilisé pour mettre à jour l'affichage lorsque l'état du jeu change. La classe `Game` agit en tant qu'objet Observable, et la classe `JavaFXDisplay` (qui implémente l'interface `Display`) agit en tant qu'observateur. Lorsque l'état du jeu change, la classe `Game` notifie `JavaFXDisplay` qui met à jour l'affichage en conséquence. Ce modèle permet d'ajouter facilement d'autres types d'affichage à l'avenir, sans affecter la logique du jeu.
+Le patron Observer est utilisé pour mettre à jour l'affichage lorsque l'état du jeu change. La classe `Game` agit en tant qu'objet Observable, et la classe `JavaFXDisplay` (qui implémente l'interface `Observer`) agit en tant qu'observateur. Lorsque l'état du jeu change, la classe `Game` notifie `JavaFXDisplay` qui met à jour l'affichage en conséquence. Ce modèle permet d'ajouter facilement d'autres types d'affichage à l'avenir, sans affecter la logique du jeu.
