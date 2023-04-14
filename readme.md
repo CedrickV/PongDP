@@ -18,7 +18,7 @@ Le patron Singleton a été utilisé pour la classe `JavaFXDisplay`. Comme il n'
 
 ### Strategy
 
-Le patron Strategy est utilisé pour déterminer le comportement des raquettes dans le jeu. L'interface `PaddleBehavior` définit les méthodes pour les différentes stratégies de déplacement de la raquette. Actuellement, une seule stratégie est implémentée, `AutoPaddle`, qui déplace la raquette automatiquement en fonction de la position de la balle. Cela permet d'ajouter facilement d'autres stratégies de déplacement de raquette à l'avenir, telles que le contrôle manuel du joueur, sans affecter les autres parties du code.
+LLe patron Strategy a été implémenté pour déterminer le comportement de la balle dans le jeu Pong. Plus précisément, la classe Ball utilise une interface BallBehavior qui définit une méthode updatePosition() qui permet de mettre à jour la position de la balle. En utilisant ce patron, on peut facilement changer le comportement de la balle en changeant simplement la classe qui implémente BallBehavior. Cela permet également d'ajouter facilement de nouveaux comportements de balle à l'avenir sans avoir à modifier le code existant de la classe Ball.
 
 ### Observer
 
